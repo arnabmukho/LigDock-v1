@@ -7,7 +7,7 @@ LigDock v1 is a pipeline for running AutoDock Vina to perform docking simulation
 - [Requirements](#requirements)
 - [Cloning the Repository](#cloning-the-repository)
 - [Usage](#usage)
-  - [Running the Docking Pipeline](#running-the-docking-pipeline)
+- [Running the Docking Pipeline](#running-the-docking-pipeline)
 - [Steps in the Docking Pipeline](#steps-in-the-docking-pipeline)
 
 ## Requirements

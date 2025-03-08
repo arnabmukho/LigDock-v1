@@ -12,7 +12,7 @@ LigDock v1 is a pipeline for running AutoDock Vina to perform docking simulation
 
 ## Requirements
 
-- AutoDock Vina
+- AutoDock Vina 4.2
 - MGLTools
 - Open Babel
 - UCSF Chimera

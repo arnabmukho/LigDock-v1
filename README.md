@@ -1,6 +1,6 @@
 # LigDock v1 (BETA)
 
-LigDock v1 is a pipeline for running AutoDock Vina 4.2 to perform docking simulations. The pipeline includes scripts to prepare the protein and ligands, run the docking simulations, and generate the final docked poses with both the protein and ligand included.
+LigDock v1 is a pipeline for running AutoDock Vina 4.2 to perform molecular docking simulations for >500 ligands at once. The pipeline includes scripts to prepare the protein and ligands, run the docking simulations, and generate the final docked poses with both the protein and ligand included.
 
 ## Table of Contents
 

@@ -34,9 +34,9 @@ git clone https://github.com/arnabmukho/LigDock-v1.git
 1. Place your protein file (e.g., `protein.pdb`) in the same directory as the script.
 2. Create a directory named `ligands` and place individual ligand SDF files in that directory.
 3. Run the docking script:
-   ```bash
-   ./LigDock.sh
-   ```
+```bash
+./LigDock.sh
+```
 
 ## Steps in the Docking Pipeline
 

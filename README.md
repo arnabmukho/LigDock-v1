@@ -58,3 +58,7 @@ git clone https://github.com/arnabmukho/LigDock-v1.git
    - Docked poses are saved in the `docked_poses` directory.
    - Log files are saved in the `logs` directory.
    - A summary log file is generated with the docking scores.
+
+```bash
+© 2025 LigDock v1 by Arnab Mukhopadhyay. All rights reserved.
+```

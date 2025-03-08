@@ -53,8 +53,7 @@ git clone https://github.com/arnabmukho/LigDock-v1.git
 3. **Run Docking Simulations:**
    - Binding site coordinates are extracted using a Python script.
    - AutoDock Vina is used to perform docking simulations for each ligand.
-   - The protein and docked ligand are combined into a single PDBQT file.
-
+   
 4. **Output:**
    - Docked poses are saved in the `docked_poses` directory.
    - Log files are saved in the `logs` directory.

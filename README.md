@@ -59,6 +59,6 @@ git clone https://github.com/arnabmukho/LigDock-v1.git
    - Log files are saved in the `logs` directory.
    - A summary log file is generated with the docking scores.
 
-```bash
-© 2025 LigDock v1 by Arnab Mukhopadhyay. All rights reserved.
+```
+© 2025 LigDock v1 by Arnab Mukherjee. All rights reserved.
 ```

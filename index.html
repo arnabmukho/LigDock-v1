@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LigDock v1 - Automated Docking Pipeline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            flex: 1;
+            padding: 2em;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        footer {
+            background: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LigDock v1 - Automated Docking Pipeline</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>LigDock v1 is a powerful and automated docking pipeline designed to perform docking simulations using AutoDock Vina. This tool helps researchers to prepare protein and ligand structures, run docking simulations, and generate the final docked poses with both the protein and ligand included. The tool integrates several scientific software packages to streamline the docking process, making it easier and more efficient.</p>
+        </section>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Automated protein and ligand preparation</li>
+                <li>Energy minimization using UCSF Chimera</li>
+                <li>Docking simulations with AutoDock Vina</li>
+                <li>Final output includes both protein and ligand</li>
+                <li>Comprehensive logging and error handling</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Requirements</h2>
+            <ul>
+                <li>AutoDock Vina</li>
+                <li>MGLTools</li>
+                <li>Open Babel</li>
+                <li>UCSF Chimera</li>
+                <li>Python 3.x</li>
+                <li>Biopython</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Cloning the Repository</h2>
+            <p>You can clone the repository from GitHub using the following command:</p>
+            <pre>
+git clone https://github.com/arnabmukho/LigDock-v1.git
+            </pre>
+        </section>
+        <section>
+            <h2>Usage</h2>
+            <pre>
+1. Place your protein file (e.g., `protein.pdb`) in the same directory as the script.
+2. Create a directory named `ligands` and place individual ligand SDF files in that directory.
+3. Run the docking script:
+   ```bash
+   ./LigDock.sh
+   ```
+            </pre>
+        </section>
+        <section>
+            <h2>Detailed Explanation</h2>
+            <h3>Steps in the Docking Pipeline</h3>
+            <p>The docking pipeline follows these steps:</p>
+            <ul>
+                <li><strong>Prepare the Protein:</strong> The protein structure is cleaned by removing specified heteroatoms. Hydrogens are added, and energy minimization is performed using UCSF Chimera. The minimized protein structure is prepared for docking using MGLTools.</li>
+                <li><strong>Prepare the Ligands:</strong> Each ligand in SDF format is converted to PDBQT format using Open Babel. Hydrogens and Gasteiger charges are added to the ligand. The ligand is prepared for docking using MGLTools.</li>
+                <li><strong>Run Docking Simulations:</strong> Binding site coordinates are extracted using a Python script. AutoDock Vina is used to perform docking simulations for each ligand. The protein and docked ligand are combined into a single PDBQT file.</li>
+                <li><strong>Output:</strong> Docked poses are saved in the `docked_poses` directory. Log files are saved in the `logs` directory. A summary log file is generated with the docking scores.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 LigDock v1 by Arnab Mukhopadhyay. All rights reserved.</p>
+    </footer>
+</body>
+</html>
